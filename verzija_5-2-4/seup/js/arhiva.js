@@ -254,7 +254,7 @@ class ArchiveManager {
             formData.append('action', 'restore');
             formData.append('id', id);
 
-            const response = await fetch(window.location.href, {
+            const response = await fetch('', {
                 method: 'POST',
                 body: formData
             });
@@ -285,7 +285,7 @@ class ArchiveManager {
             formData.append('action', 'delete');
             formData.append('id', id);
 
-            const response = await fetch(window.location.href, {
+            const response = await fetch('', {
                 method: 'POST',
                 body: formData
             });
@@ -316,7 +316,7 @@ class ArchiveManager {
             formData.append('action', 'permanent_delete');
             formData.append('id', id);
 
-            const response = await fetch(window.location.href, {
+            const response = await fetch('', {
                 method: 'POST',
                 body: formData
             });

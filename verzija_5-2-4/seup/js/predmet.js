@@ -1058,7 +1058,7 @@ document.addEventListener("DOMContentLoaded", function() {
         formData.append('action', 'get_zaprimanje_details');
         formData.append('zaprimanje_id', zaprimanjeId);
 
-        fetch(window.location.pathname + window.location.search, {
+        fetch('', {
             method: 'POST',
             body: formData
         })
@@ -1193,7 +1193,7 @@ document.addEventListener("DOMContentLoaded", function() {
         formData.append('action', 'get_otprema_details');
         formData.append('ecm_file_id', ecmFileId);
 
-        fetch(window.location.pathname + window.location.search, {
+        fetch('', {
             method: 'POST',
             body: formData
         })

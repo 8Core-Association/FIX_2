@@ -124,7 +124,7 @@
         formData.append('action', 'search_posiljatelji');
         formData.append('query', query);
 
-        fetch(window.location.href, {
+        fetch('', {
             method: 'POST',
             body: formData
         })
@@ -206,7 +206,7 @@
             const formData = new FormData(form);
             console.log('FormData created');
 
-            fetch(window.location.href, {
+            fetch('', {
                 method: 'POST',
                 body: formData
             })
