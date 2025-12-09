@@ -259,7 +259,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const formData = new FormData();
             formData.append('action', 'generate_omot');
 
-            fetch('', {
+            fetch(window.location.search, {
                 method: 'POST',
                 body: formData
             })
@@ -313,7 +313,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const formData = new FormData();
         formData.append('action', 'preview_omot');
 
-        fetch('', {
+        fetch(window.location.search, {
             method: 'POST',
             body: formData
         })
@@ -356,7 +356,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const formData = new FormData();
         formData.append('action', 'preview_omot');
 
-        fetch('', {
+        fetch(window.location.search, {
             method: 'POST',
             body: formData
         })
@@ -447,7 +447,7 @@ document.addEventListener("DOMContentLoaded", function() {
             formData.append('filename', doc.filename);
             formData.append('filepath', doc.filepath);
 
-            fetch('', {
+            fetch(window.location.search, {
                 method: 'POST',
                 body: formData
             })
@@ -516,7 +516,7 @@ document.addEventListener("DOMContentLoaded", function() {
         formData.append('filename', currentDeleteData.filename);
         formData.append('filepath', currentDeleteData.filepath);
 
-        fetch('', {
+        fetch(window.location.search, {
             method: 'POST',
             body: formData
         })
@@ -701,7 +701,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 console.log(pair[0] + ': ' + pair[1]);
             }
 
-            fetch('', {
+            fetch(window.location.search, {
                 method: 'POST',
                 body: formData
             })
@@ -877,7 +877,7 @@ document.addEventListener("DOMContentLoaded", function() {
             formData.append('doc_ids[]', doc.id);
         });
 
-        fetch('', {
+        fetch(window.location.search, {
             method: 'POST',
             body: formData
         })
@@ -1058,7 +1058,7 @@ document.addEventListener("DOMContentLoaded", function() {
         formData.append('action', 'get_zaprimanje_details');
         formData.append('zaprimanje_id', zaprimanjeId);
 
-        fetch('', {
+        fetch(window.location.search, {
             method: 'POST',
             body: formData
         })
@@ -1193,7 +1193,7 @@ document.addEventListener("DOMContentLoaded", function() {
         formData.append('action', 'get_otprema_details');
         formData.append('ecm_file_id', ecmFileId);
 
-        fetch('', {
+        fetch(window.location.search, {
             method: 'POST',
             body: formData
         })

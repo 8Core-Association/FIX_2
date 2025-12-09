@@ -124,7 +124,10 @@
         formData.append('action', 'search_posiljatelji');
         formData.append('query', query);
 
-        fetch('', {
+        const urlParams = new URLSearchParams(window.location.search);
+        const caseId = urlParams.get('id');
+
+        fetch('?id=' + caseId, {
             method: 'POST',
             body: formData
         })
@@ -206,7 +209,10 @@
             const formData = new FormData(form);
             console.log('FormData created');
 
-            fetch('', {
+            const urlParams = new URLSearchParams(window.location.search);
+            const caseId = urlParams.get('id');
+
+            fetch('?id=' + caseId, {
                 method: 'POST',
                 body: formData
             })
