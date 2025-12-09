@@ -337,7 +337,9 @@ class Predmet_Action_Handler
 
     public static function handleGetNedodjeljeni($db, $conf)
     {
-        @ob_end_clean();
+        while (ob_get_level()) {
+            ob_end_clean();
+        }
         header('Content-Type: application/json');
         ob_start();
 
@@ -360,7 +362,9 @@ class Predmet_Action_Handler
 
     public static function handleBulkAssignDocuments($db, $conf, $user)
     {
-        @ob_end_clean();
+        while (ob_get_level()) {
+            ob_end_clean();
+        }
         header('Content-Type: application/json');
         ob_start();
 
@@ -401,7 +405,9 @@ class Predmet_Action_Handler
 
     public static function handleRegistrirajOtpremu($db, $conf, $user)
     {
-        @ob_end_clean();
+        while (ob_get_level()) {
+            ob_end_clean();
+        }
         header('Content-Type: application/json');
         ob_start();
 
@@ -536,7 +542,9 @@ class Predmet_Action_Handler
 
     public static function handleBulkOtprema($db, $conf, $user)
     {
-        @ob_end_clean();
+        while (ob_get_level()) {
+            ob_end_clean();
+        }
         header('Content-Type: application/json');
         ob_start();
 
@@ -621,7 +629,9 @@ class Predmet_Action_Handler
 
     public static function handleRegistrirajZaprimanje($db, $conf, $user, $caseId)
     {
-        @ob_end_clean();
+        while (ob_get_level()) {
+            ob_end_clean();
+        }
         header('Content-Type: application/json');
         ob_start();
 
@@ -712,7 +722,9 @@ class Predmet_Action_Handler
 
     public static function handleSearchPosiljatelji($db)
     {
-        @ob_end_clean();
+        while (ob_get_level()) {
+            ob_end_clean();
+        }
         header('Content-Type: application/json');
         ob_start();
 
